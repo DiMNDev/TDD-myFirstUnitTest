@@ -28,11 +28,15 @@ Once you have configured your enviornment, you should be able to use the testing
 
 To configure nyc for use add the following lines of code to "scripts" inside your package.json file:
 
-> `"test": "mocha myTests/"` >`"coverage": "nyc npm run test"`
+> `"test": "mocha myTests/"`
+
+> `"coverage": "nyc npm run test"`
 
 Once you add these two lines you should be able to run them from the command line with the following commands:
 
-> `"npm run test" - This will run all tests found in the specified folder myTests.` >`"npm run coverage" - This will run all tests found in the specified folder myTests with coverage, printing the output to the terminal.`
+> `"npm run test"` - This will run all tests found in the specified folder myTests.
+
+> `"npm run coverage"` - This will run all tests found in the specified folder myTests with coverage, printing the output to the terminal.
 
 In this project I have broken it down into examples:
 
@@ -52,9 +56,9 @@ Example-7 demonstrates async, await, and promises in tests
 
 Examples-8 & Examples-9 demonstrate the principles of TDD:
 
-- Writing failing unit tests (redPhase)
-- Writing passing production code (greenPhase)
-- Refactoring tests/production code to build forward (refactorPhase)
+- Writing failing unit tests `"redPhase"`
+- Writing passing production code `"greenPhase"`
+- Refactoring tests/production code to build forward `"refactorPhase"`
 
 Each (8, 9) have a corresponding file with extensions:
 
@@ -64,7 +68,7 @@ Each (8, 9) have a corresponding file with extensions:
 
 -.txt - The regularly expressed, human readable, steps or guidelines to produce the feature. The idea of the feature if you will.
 
-Example-10 Demonstrates the use of code coverage using the nyc package. By commenting out the second test inside Example-10 and running `"npm run coverage"` you can see this in action
+Example-10 Demonstrates the use of code coverage using the nyc package. By commenting out the second test inside Example-10 and running `"npm run coverage"` you can see this in action.
 
 To run these tests via the command line you can run this line of code here:
 
