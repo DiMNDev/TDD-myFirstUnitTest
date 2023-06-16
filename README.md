@@ -6,7 +6,7 @@ To configure the extension for best usability, add this line to your vscode sett
 
 > `"mochaExplorer.files": "myTests/**/*.test.js"`
 
-To configure the development environment install the following dependencies.
+To configure the development environment install the following dependencies:
 
 > `"@sinonjs/referee-sinon": "^11.0.0"`
 
@@ -22,7 +22,17 @@ To configure the development environment install the following dependencies.
 
 > `"sinon-chai": "^3.7.0"`
 
-Once you have configured your enviornment, you should be able to use the testing sidebar inside VS Code.
+> `"nyc": "^15.1.0"`
+
+Once you have configured your enviornment, you should be able to use the testing sidebar inside VS Code and in-line of your test file.
+
+To configure nyc for use add the following lines of code to "scripts" inside your package.json file:
+
+> `"test": "mocha myTests/"` >`"coverage": "nyc npm run test"`
+
+Once you add these two lines you should be able to run them from the command line with the following commands:
+
+> `"npm run test" - This will run all tests found in the specified folder myTests.` >`"npm run coverage" - This will run all tests found in the specified folder myTests with coverage, printing the output to the terminal.`
 
 In this project I have broken it down into examples:
 
@@ -54,10 +64,12 @@ Each (8, 9) have a corresponding file with extensions:
 
 -.txt - The regularly expressed, human readable, steps or guidelines to produce the feature. The idea of the feature if you will.
 
+Example-10 Demonstrates the use of code coverage using the nyc package. By commenting out the second test inside Example-10 and running `"npm run coverage"` you can see this in action
+
 To run these tests via the command line you can run this line of code here:
 
 > `./node_modules/mocha/bin/_mocha -g Example myTests/`
 
-To run an individual test via the command line you can run this line of code here with the asterisk replaced with the test you wish to run:
+To run an individual test via the command line you can run this line of code here with the asterisk replaced with the test number you wish to run:
 
 > `./node_modules/mocha/bin/_mocha -g Example-* myTests/`
