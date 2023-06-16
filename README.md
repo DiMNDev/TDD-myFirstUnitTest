@@ -62,11 +62,11 @@ Examples-8 & Examples-9 demonstrate the principles of TDD:
 
 Each (8, 9) have a corresponding file with extensions:
 
--.test.js - The test file for the example
+`.test.js` - The test file for the example
 
--.js - The production code for the example
+`.js` - The production code for the example
 
--.txt - The regularly expressed, human readable, steps or guidelines to produce the feature. The idea of the feature if you will.
+`.txt` - The regularly expressed, human readable, steps or guidelines to produce the feature. The idea of the feature if you will.
 
 Example-10 Demonstrates the use of code coverage using the nyc package. By commenting out the second test inside Example-10 and running `"npm run coverage"` you can see this in action.
 
