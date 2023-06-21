@@ -1,0 +1,26 @@
+{
+  "name": "myfirstunittests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha myTests/",
+    "coverage": "nyc npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@sinonjs/referee-sinon": "^11.0.0",
+    "chai": "^4.3.7",
+    "jsverify": "^0.8.4",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "request": "^2.88.2",
+    "sinon": "^15.1.2",
+    "sinon-chai": "^3.7.0"
+  },
+  "dependencies": {
+    "knuth-shuffle": "1.0"
+  }
+}
